@@ -1,0 +1,65 @@
+@font-face {
+  font-family: 'Harmonia Sans Pro Cyr';
+  src: url('fonts/HarmoniaSansProCyr-Regular.woff2') format('woff2'),
+  url('fonts/HarmoniaSansProCyr-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia Sans Pro Cyr';
+  src: url('fonts/HarmoniaSansProCyr-Light.woff2') format('woff2'),
+  url('fonts/HarmoniaSansProCyr-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia Sans Pro Cyr';
+  src: url('fonts/HarmoniaSansProCyr-Bold.woff2') format('woff2'),
+  url('fonts/HarmoniaSansProCyr-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia Sans Pro Cyr';
+  src: url('fonts/HarmoniaSansProCyr-SemiBd.woff2') format('woff2'),
+  url('fonts/HarmoniaSansProCyr-SemiBd.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia Sans Std';
+  src: url('fonts/HarmoniaSansStd-Bold.woff2') format('woff2'),
+  url('fonts/HarmoniaSansStd-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia Sans Std Semi Bd';
+  src: url('fonts/HarmoniaSansStd-SemiBd.woff2') format('woff2'),
+  url('fonts/HarmoniaSansStd-SemiBd.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia Sans Std';
+  src: url('fonts/HarmoniaSansStd-Regular.woff2') format('woff2'),
+  url('fonts/HarmoniaSansStd-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Harmonia Sans Std';
+  src: url('fonts/HarmoniaSansStd-Light.woff2') format('woff2'),
+  url('fonts/HarmoniaSansStd-Light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+$basefont: 'Harmonia Sans Pro Cyr', 'Harmonia Sans Std', sans-serif;

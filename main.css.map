@@ -1,0 +1,1 @@
+{"version":3,"sources":["main.scss"],"names":[],"mappings":"AAAA,yCAAO;AAEP;EACE,sBAAsB;EACtB,sBAAsB,EAAA","file":"main.css","sourcesContent":["@import \"~normalize.css/normalize.css\";\n\n* {\n  box-sizing: border-box;\n  vertical-align: middle;\n}\n"]}
