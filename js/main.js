@@ -50,6 +50,12 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
         }, 20)
     });
+    
+    vidElem = document.getElementsByTagName('video')[0];
+    vidElem.addEventListener("ended", function () {
+            vidElem.currentTime = 2.05;
+            vidElem.play();
+    }, false);
 });
 
 function generateNav() {
