@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     vidElem = document.getElementsByTagName('video')[0];
     vidElem.addEventListener("ended", function () {
-            vidElem.currentTime = 2.06;
+            vidElem.currentTime = 2.07;
             vidElem.play();
     }, false);
 });
