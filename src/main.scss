@@ -76,9 +76,12 @@ body {
 }
 
 .svg-logo-left {
-  width: 52px;
-  height: 25px;
-  margin-right: -6px;
+  height: 42px;
+  width: 123px;
+  background: url(../assets/svg/logo-left.svg);
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  margin-left: -37px;
 }
 
 .svg-logo-right {
@@ -188,6 +191,13 @@ body {
     align-items: center;
     justify-content: center;
     cursor: pointer;
+    transition: all .2s ease-in-out;
+    min-width: 38px;
+    border-radius: 4px;
+
+    &:hover {
+      background: #f4f2f7;
+    }
 
     &--lang {
       margin: 0 31px 0 43px;
@@ -202,6 +212,10 @@ body {
       text-align: center;
       color: $basecolor;
       font-weight: 600;
+
+      &:hover {
+        background: #f4f2f7;
+      }
     }
 
     @include respond-to(handhelds) {
@@ -226,6 +240,11 @@ body {
     letter-spacing: 0.1px;
     font-size: 14px;
     font-weight: 600;
+    transition: all .2s ease-in-out;
+
+    &:hover {
+      background-color: #f4f2f7;
+    }
   }
 
   &__top-video-wrap {
@@ -324,6 +343,8 @@ body {
       line-height: normal;
       letter-spacing: 0.1px;
       background: #fff;
+      outline: none;
+      box-shadow: none;
     }
 
     button {
@@ -338,6 +359,11 @@ body {
       align-items: center;
       justify-content: center;
       cursor: pointer;
+      transition: background-color .2s ease-in-out;
+
+      &:hover {
+        background: rgba($secondarycolor, .8);
+      }
     }
 
     @include respond-to(handhelds) {
@@ -371,7 +397,16 @@ body {
     border: none;
     align-items: center;
     cursor: pointer;
-    transition: background-color .195s ease-in-out;
+    transition: background-color .2s ease-in-out;
+
+    &--personal {
+      flex-direction: row;
+
+      span {
+        color: #fff;
+        margin: 0 5px;
+      }
+    }
 
     &:hover {
       background: rgba($secondarycolor, .8);
@@ -407,6 +442,9 @@ body {
     @include respond-to(handhelds) {
       padding-top: 0;
       width: 100%;
+      overflow-x: hidden;
+      padding-bottom: 300px;
+      margin-bottom: -300px;
 
       .fixed-width {
         display: flex;
@@ -1426,7 +1464,7 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    transition: background-color 0.195s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     &--first {
       background-image: url(../assets/svg/start.svg);
@@ -1438,7 +1476,7 @@ body {
 
     .ab__parts-item-img {
       path {
-        transition: all .195s ease-in-out;
+        transition: all .2s ease-in-out;
       }
     }
 
@@ -1623,36 +1661,62 @@ body {
     display: flex;
     justify-content: center;
 
+    @include respond-to(handhelds) {
+      overflow: hidden;
+      padding-top: 90px;
+      margin-top: -90px;
+    }
+
   }
 
   &__user {
     margin: 0 25px;
     width: 108px;
 
-    @include respond-to(handhelds) {
-      display: none;
+    &--empty, &--empty-2 {
+      .ab {
+        &__user-img {
+          width: 108px;
+          height: 108px;
+          border-radius: 50%;
+          background: #fbfafc;
 
-      &:first-child {
-        display: block;
-
-        .ab {
-          &__user--name {
-            opacity: 1;
-          }
-
-          &__user-img {
-            filter: grayscale(0);
-
-            img {
-              box-shadow: 0 0 0 22px #fff , 0px 59px 81px 0 rgba(134, 119, 176, 0.2);
-            }
-
-            &:before, &:after {
-              opacity: 1;
-            }
+          &:before, &:after {
+            display: none;
           }
         }
       }
+
+      @include respond-to(handhelds) {
+        display: none;
+      }
+    }
+
+    &--empty-2 {
+      .ab {
+        &__user-img {
+          background: #f4f2f7;
+        }
+      }
+    }
+
+    @include respond-to(handhelds) {
+      width: 68px;
+
+        .ab {
+          &__user-img {
+            filter: grayscale(0);
+            width: 68px;
+            height: 68px;
+            margin: 0 0 40px;
+
+            img {
+              box-shadow: 0 0 0 12px #fff , 0px 59px 81px 0 rgba(134, 119, 176, 0.2);
+              width: 68px;
+              height: 68px;
+            }
+          }
+        }
     }
 
     &--name {
@@ -1669,7 +1733,7 @@ body {
       letter-spacing: normal;
       margin-bottom: 40px;
       opacity: 0;
-      transition: opacity .195s ease-in-out;
+      transition: opacity .2s ease-in-out;
     }
 
     &:hover {
@@ -1699,7 +1763,7 @@ body {
     border-radius: 50%;
     margin-bottom: 40px;
     background: $secondarycolor;
-    transition: all .195s ease-in-out;
+    transition: all .2s ease-in-out;
     filter: grayscale(1);
 
     &:before, &:after {
@@ -1711,7 +1775,7 @@ body {
       background-color: #8546b0;
       border-radius: 50%;
       opacity: 0;
-      transition: opacity .195s ease-in-out;
+      transition: opacity .2s ease-in-out;
     }
 
     &:after {
@@ -1734,7 +1798,7 @@ body {
       width: 108px;
       height: 108px;
       border-radius: 50%;
-      transition: all .195s ease-in-out;
+      transition: all .2s ease-in-out;
     }
   }
 
@@ -1872,7 +1936,7 @@ body {
         &.ab__price-list-item {
           margin: 0 auto;
           width: 100%;
-          padding: 37px 80px 47px;
+          padding: 37px 0 47px 80px;
           height: auto;
         }
       }
@@ -1960,6 +2024,8 @@ body {
       display: flex;
       justify-content: center;
       overflow: hidden;
+      padding-bottom: 243px;
+      margin-bottom: -100px;
     }
   }
 
@@ -2236,6 +2302,11 @@ body {
     @include respond-to(handhelds) {
       flex-direction: column;
       height: auto;
+      overflow: hidden;
+      padding-top: 100px;
+      margin-top: -100px;
+      padding-bottom: 200px;
+      margin-bottom: -200px;
     }
   }
 
@@ -2264,6 +2335,12 @@ body {
         position: absolute;
         top: 122px;
         left: 49px;
+
+        @include respond-to(handhelds) {
+          top: 652px;
+          left: 50%;
+          margin-left: -60px;
+        }
       }
 
       @include respond-to(handhelds) {
@@ -2282,6 +2359,11 @@ body {
         position: absolute;
         top: 16px;
         left: -8px;
+
+        @include respond-to(handhelds) {
+          top: -490px;
+          left: -14px;
+        }
       }
     }
 
@@ -2296,6 +2378,12 @@ body {
         position: absolute;
         top: -9px;
         left: 3px;
+
+        @include respond-to(handhelds) {
+          top: 93px;
+          left: auto;
+          right: -50px;
+        }
       }
 
       @include respond-to(handhelds) {
@@ -2316,8 +2404,26 @@ body {
     font-weight: bold;
     position: relative;
     z-index: 1;
-    transition: all 0.195s ease-in-out;
+    transition: all 0.2s ease-in-out;
     text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &:after {
+      background: $secondarycolor;
+      border-radius: 3px;
+      height: 6px;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 30px;
+      width: 50px;
+    }
+
+    svg path {
+      transition: all 0.2s ease-in-out;
+    }
 
     &:hover {
       background-color: $secondarycolor;
@@ -2326,11 +2432,6 @@ body {
       svg path {
         fill: #fff;
       }
-    }
-
-    @include respond-to(handhelds) {
-      width: 100%;
-      margin: 0 0 20px;
     }
 
     .svg-icon {
@@ -2344,6 +2445,14 @@ body {
 
     .svg-icon--follow {
       margin-top: 16px;
+
+      @include respond-to(handhelds ){
+        margin-top: 14px;
+
+        svg {
+          margin-top: 0;
+        }
+      }
     }
 
     &--small {
@@ -2366,6 +2475,25 @@ body {
 
       @include respond-to(handhelds) {
         width: 100%;
+      }
+    }
+
+    @include respond-to(handhelds) {
+      width: 100%;
+      margin: 0 0 20px;
+      padding-bottom: 0;
+
+      svg {
+        margin-top: 22px;
+      }
+
+      .svg-group {
+        margin-top: 0;
+
+        svg + svg {
+          margin-right: auto;
+          margin-left: 80px;
+        }
       }
     }
   }
@@ -2541,10 +2669,11 @@ body {
     }
 
     .svg-logo-left {
-      width: 53px;
-      height: 30px;
+      width: 146px;
+      height: 47px;
       background: url(../assets/svg/logo-left.svg);
-      background-size: 100%;
+      background-size: auto 100%;
+      background-repeat: no-repeat;
       margin-left: -37px;
     }
 
@@ -2656,5 +2785,11 @@ body {
       flex-direction: column;
       margin-bottom: 20px;
     }
+  }
+}
+
+.only-desk-personal {
+  @include respond-to(handhelds) {
+    display: none;
   }
 }

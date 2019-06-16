@@ -6,7 +6,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
         items: 1,
         slideBy: 'page',
         autoplay: true,
-        controls: false
+        controls: false,
+        mouseDrag: true,
+        speed: 800
     });
 
     generateNav();
@@ -14,6 +16,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var items = document.querySelectorAll('.js-section');
     var links = document.querySelectorAll('.js-nav-link');
     var timeout = 0;
+
+    links[0].classList.add('active');
 
     document.addEventListener("scroll", function() {
         clearTimeout(timeout);
@@ -24,37 +28,74 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             var height = 0;
 
-            items.forEach(function (value) {
-                var inView = isAnyPartOfElementInViewport(value);
+            // switch
 
+            if(window.scrollY < 500) {
+                links[0].classList.add('active')
+            }
 
-                if(isAnyPartOfElementInViewport(value)) {
-                    var idx = value.dataset.section;
+            if(window.scrollY >= 750 && window.scrollY <= 1200) {
+                links[1].classList.add('active')
+            }
 
-                    if(height < (value.getBoundingClientRect().height - Math.abs((value.getBoundingClientRect().top)))) {
-                        if(parseInt(idx) > 0) {
-                            links[idx - 1].classList.remove('active');
-                            links[idx].classList.add('active');
-                        } else {
-                            links[idx].classList.add('active');
-                        }
-                    } else {
-                        if(parseInt(idx) > 0) {
-                            links[idx - 1].classList.add('active');
-                        }
-                        links[idx].classList.remove('active');
-                    }
+            if(window.scrollY >= 1700 && window.scrollY <= 3327) {
+                links[2].classList.add('active')
+            }
 
-                    height = value.getBoundingClientRect().height - Math.abs((value.getBoundingClientRect().top));
-                }
-            })
+            if(window.scrollY >= 3455 && window.scrollY <= 5900) {
+                links[3].classList.add('active')
+            }
+
+            if(window.scrollY >= 6100 && window.scrollY <= 7000) {
+                links[4].classList.add('active')
+            }
+
+            if(window.scrollY >= 7000 && window.scrollY <= 7400) {
+                links[5].classList.add('active')
+            }
+
+            if(window.scrollY >= 7615 && window.scrollY <= 8433) {
+                links[6].classList.add('active')
+            }
+
+            if(window.scrollY >= 8500 && window.scrollY <= 9206) {
+                links[7].classList.add('active')
+            }
+
+            if(window.scrollY >= 9500 && window.scrollY <= 10148) {
+                links[8].classList.add('active')
+            }
+
+            // items.forEach(function (value) {
+            //     var inView = isAnyPartOfElementInViewport(value);
+            //
+            //     if(inView) {
+            //         var idx = value.dataset.section;
+            //         var clientRect = value.getBoundingClientRect();
+            //         if(height < (clientRect.height - Math.abs((clientRect.top)))) {
+            //             if(parseInt(idx) > 0) {
+            //                 links[idx - 1].classList.remove('active');
+            //                 links[idx].classList.add('active');
+            //             } else {
+            //                 links[idx].classList.add('active');
+            //             }
+            //         } else {
+            //             if(parseInt(idx) > 0) {
+            //                 links[idx - 1].classList.add('active');
+            //             }
+            //             links[idx].classList.remove('active');
+            //         }
+            //
+            //         height = clientRect.height - Math.abs((clientRect.top));
+            //     }
+            // })
 
         }, 20)
     });
     
     vidElem = document.getElementsByTagName('video')[0];
     vidElem.addEventListener("ended", function () {
-            vidElem.currentTime = 2.07;
+            vidElem.currentTime = 2.11;
             vidElem.play();
     }, false);
 });
