@@ -82,6 +82,10 @@ body {
   background-size: auto 100%;
   background-repeat: no-repeat;
   margin-left: -37px;
+
+  @include respond-to(handhelds) {
+    margin-left: 0;
+  }
 }
 
 .svg-logo-right {
@@ -212,9 +216,32 @@ body {
       text-align: center;
       color: $basecolor;
       font-weight: 600;
+      position: relative;
 
       &:hover {
-        background: #f4f2f7;
+        border-radius: 4px 4px 0 0;
+
+        .ab__lang-switcher {
+          opacity: 1;
+          pointer-events: auto;
+        }
+      }
+
+      .ab__lang-switcher {
+        opacity: 0;
+        pointer-events: none;
+        transition: all .2s ease-in-out;
+        position: absolute;
+        top: calc(100%);
+        left: 0;
+        border-radius: 0 0 4px 4px;
+        background: #fff;
+        text-align: center;
+        width: 38px;
+        height: 38px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
     }
 
@@ -2759,6 +2786,104 @@ body {
   &__footer-logo {
     .svg-logo-left {
       margin-right: 2px;
+    }
+  }
+
+  &__overlay {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background: rgba(#e4e2ec, .9);
+    z-index: 10;
+    transition: all .2s ease-in-out;
+    pointer-events: none;
+    transform: translate(0, -100vh);
+
+    &.shown {
+      pointer-events: auto;
+      transform: translate(0, 0);
+    }
+  }
+
+  &__menu-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    position: relative;
+
+    @include respond-to(handhelds) {
+      .ab__top-ul {
+        display: block;
+        position: absolute;
+        left: 16px;
+        top: 16px;
+
+        li {
+          a {
+            font-size: 14px;
+            font-weight: normal;
+            font-style: normal;
+            font-stretch: normal;
+            letter-spacing: 0.1px;
+            text-align: center;
+            color: #5d4f65;
+            padding-top: 3px;
+          }
+        }
+      }
+    }
+
+    .svg-x {
+      position: absolute;
+      right: 3px;
+      top: 46px;
+      transition: all .2s ease-in-out;
+      cursor: pointer;
+
+      @include respond-to(handhelds) {
+        right: 13px;
+        top: 13px;
+      }
+
+      &:hover {
+        opacity: .7;
+      }
+    }
+
+    ul {
+      padding: 0;
+    }
+
+    li {
+      list-style: none;
+      text-align: center;
+
+      a {
+        font-size: 44px;
+        font-weight: 300;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.64;
+        letter-spacing: normal;
+        text-align: center;
+        color: $basecolor;
+        transition: all .2s ease-in-out;
+        text-decoration: none;
+
+        @include respond-to(handhelds) {
+          font-size: 36px;
+          font-weight: 300;
+          line-height: 2;
+        }
+
+        &:hover {
+          color: $secondarycolor;
+          text-decoration: line-through;
+        }
+      }
     }
   }
 }

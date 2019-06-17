@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     generateNav();
 
+    var menuBtns = document.querySelectorAll('.js-toggle-menu');
     var items = document.querySelectorAll('.js-section');
     var links = document.querySelectorAll('.js-nav-link');
     var timeout = 0;
@@ -22,6 +23,10 @@ document.addEventListener("DOMContentLoaded", function(event) {
     parts = document.querySelectorAll('.js-part');
 
     links[0].classList.add('active');
+
+    for (var i = 0; i < menuBtns.length; i++) {
+        menuBtns[i].addEventListener("click", toggleMenu);
+    }
 
     document.addEventListener("scroll", function() {
         clearTimeout(timeout);
@@ -128,6 +133,16 @@ function checkThingItem() {
 
             // console.log(boundsTop, boundsBottom, window.scrollY + window.innerHeight/2);
         });
+    }
+}
+
+function toggleMenu() {
+    var overlay = document.querySelector('.js-menu-overlay');
+
+    if(overlay.classList.contains('shown')) {
+        overlay.classList.remove('shown');
+    } else {
+        overlay.classList.add('shown');
     }
 }
 
