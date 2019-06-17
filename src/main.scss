@@ -1480,7 +1480,7 @@ body {
       }
     }
 
-    &:hover {
+    &:hover, &.active {
       background-color: $secondarycolor;
 
       .ab__parts-item-text {

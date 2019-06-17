@@ -1,4 +1,6 @@
 var vidElem = null;
+var isMobile = window.innerWidth < 721;
+var parts = null;
 
 document.addEventListener("DOMContentLoaded", function(event) {
     var slider = tns({
@@ -16,6 +18,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var items = document.querySelectorAll('.js-section');
     var links = document.querySelectorAll('.js-nav-link');
     var timeout = 0;
+
+    parts = document.querySelectorAll('.js-part');
 
     links[0].classList.add('active');
 
@@ -90,6 +94,9 @@ document.addEventListener("DOMContentLoaded", function(event) {
             //     }
             // })
 
+            if(isMobile) {
+                checkThingItem();
+            }
         }, 20)
     });
     
@@ -99,6 +106,30 @@ document.addEventListener("DOMContentLoaded", function(event) {
             vidElem.play();
     }, false);
 });
+
+function checkThingItem() {
+    if(parts) {
+        var itemHeight = 117;
+        var point = (window.scrollY + window.innerHeight/2) + itemHeight;
+
+        parts.forEach(function(value) {
+            value.classList.remove('active');
+            var boundsTop = value.offsetParent.offsetTop + value.offsetTop;
+            var boundsBottom = value.offsetParent.offsetTop + value.offsetTop + value.offsetHeight;
+
+            if(boundsBottom > point && boundsTop < point) {
+                if(!value.classList.contains('active')) {
+                    value.classList.add('active');
+                }
+            } else {
+                value.classList.remove('active');
+            }
+
+
+            // console.log(boundsTop, boundsBottom, window.scrollY + window.innerHeight/2);
+        });
+    }
+}
 
 function generateNav() {
     var sections = document.querySelectorAll('.js-section');

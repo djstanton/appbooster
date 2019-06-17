@@ -1624,11 +1624,11 @@ body {
     position: absolute; }
   .ab__parts-item .ab__parts-item-img path {
     transition: all .2s ease-in-out; }
-  .ab__parts-item:hover {
+  .ab__parts-item:hover, .ab__parts-item.active {
     background-color: #e25695; }
-    .ab__parts-item:hover .ab__parts-item-text {
+    .ab__parts-item:hover .ab__parts-item-text, .ab__parts-item.active .ab__parts-item-text {
       color: #fff; }
-    .ab__parts-item:hover .ab__parts-item-img path {
+    .ab__parts-item:hover .ab__parts-item-img path, .ab__parts-item.active .ab__parts-item-img path {
       fill: #fff; }
   .ab__parts-item--second, .ab__parts-item--third, .ab__parts-item--fourth, .ab__parts-item--fifth {
     position: absolute;
