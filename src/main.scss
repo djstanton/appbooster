@@ -79,9 +79,8 @@ body {
   height: 42px;
   width: 123px;
   background: url(../assets/svg/logo-left.svg);
-  background-size: auto 100%;
+  background-size: 123px 42px;
   background-repeat: no-repeat;
-  margin-left: -37px;
 
   @include respond-to(handhelds) {
     margin-left: 0;
@@ -387,6 +386,7 @@ body {
       justify-content: center;
       cursor: pointer;
       transition: background-color .2s ease-in-out;
+      outline: none;
 
       &:hover {
         background: rgba($secondarycolor, .8);
@@ -444,10 +444,12 @@ body {
       font-size: 18px;
 
       @include respond-to(handhelds) {
-        max-width: calc(100vw - 60px);
-        padding: 0 55px;
+        max-width: 266px;
+        padding: 0 0;
         letter-spacing: 0.2px;
-        line-height: 1;
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center;
       }
     }
 
@@ -618,6 +620,7 @@ body {
         padding: 0;
         margin: 0 5px;
         transition: transform .2s ease-in-out;
+        outline: none;
 
         &.tns-nav-active {
           transform: scale(2.2);
@@ -1657,6 +1660,7 @@ body {
   &__parts-item-text {
     max-width: 80%;
     text-align: center;
+    transition: all 0.2s ease-in-out;
   }
 
   &__support {
@@ -2699,9 +2703,8 @@ body {
       width: 146px;
       height: 47px;
       background: url(../assets/svg/logo-left.svg);
-      background-size: auto 100%;
+      background-size: 146px 47px;
       background-repeat: no-repeat;
-      margin-left: -37px;
     }
 
     .svg-logo-right {
@@ -2813,6 +2816,10 @@ body {
     align-items: center;
     height: 100vh;
     position: relative;
+
+    .ab__top-ul {
+      display: none;
+    }
 
     @include respond-to(handhelds) {
       .ab__top-ul {

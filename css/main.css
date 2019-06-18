@@ -410,9 +410,8 @@ body {
   height: 42px;
   width: 123px;
   background: url(../assets/svg/logo-left.svg);
-  background-size: auto 100%;
-  background-repeat: no-repeat;
-  margin-left: -37px; }
+  background-size: 123px 42px;
+  background-repeat: no-repeat; }
   @media only screen and (max-width: 721px) {
     .svg-logo-left {
       margin-left: 0; } }
@@ -705,7 +704,8 @@ body {
     -ms-flex-pack: center;
     justify-content: center;
     cursor: pointer;
-    transition: background-color .2s ease-in-out; }
+    transition: background-color .2s ease-in-out;
+    outline: none; }
     .ab__top-section-try-form button:hover {
       background: rgba(226, 86, 149, 0.8); }
   @media only screen and (max-width: 721px) {
@@ -760,10 +760,12 @@ body {
     font-size: 18px; }
     @media only screen and (max-width: 721px) {
       .ab__button--long {
-        max-width: calc(100vw - 60px);
-        padding: 0 55px;
+        max-width: 266px;
+        padding: 0 0;
         letter-spacing: 0.2px;
-        line-height: 1; } }
+        font-size: 18px;
+        font-weight: bold;
+        text-align: center; } }
   .ab__button--signup {
     margin-bottom: 132px; }
     @media only screen and (max-width: 721px) {
@@ -917,7 +919,8 @@ body {
       margin: 0 5px;
       transition: -webkit-transform .2s ease-in-out;
       transition: transform .2s ease-in-out;
-      transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out; }
+      transition: transform .2s ease-in-out, -webkit-transform .2s ease-in-out;
+      outline: none; }
       .ab__hiw-carousel .tns-nav button.tns-nav-active {
         -webkit-transform: scale(2.2);
         transform: scale(2.2);
@@ -1755,7 +1758,8 @@ body {
 
 .ab__parts-item-text {
   max-width: 80%;
-  text-align: center; }
+  text-align: center;
+  transition: all 0.2s ease-in-out; }
 
 .ab__support {
   background: #fff;
@@ -2640,9 +2644,8 @@ body {
     width: 146px;
     height: 47px;
     background: url(../assets/svg/logo-left.svg);
-    background-size: auto 100%;
-    background-repeat: no-repeat;
-    margin-left: -37px; }
+    background-size: 146px 47px;
+    background-repeat: no-repeat; }
   .ab__footer-logo .svg-logo-right {
     width: 92px;
     height: 22px;
@@ -2747,6 +2750,8 @@ body {
   align-items: center;
   height: 100vh;
   position: relative; }
+  .ab__menu-popup .ab__top-ul {
+    display: none; }
   @media only screen and (max-width: 721px) {
     .ab__menu-popup .ab__top-ul {
       display: block;

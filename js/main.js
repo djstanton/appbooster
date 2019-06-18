@@ -39,19 +39,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
             // switch
 
-            if(window.scrollY < 500) {
+            if(window.scrollY < 750) {
                 links[0].classList.add('active')
             }
 
-            if(window.scrollY >= 750 && window.scrollY <= 1200) {
+            if(window.scrollY >= 750 && window.scrollY <= 1700) {
                 links[1].classList.add('active')
             }
 
-            if(window.scrollY >= 1700 && window.scrollY <= 3327) {
+            if(window.scrollY >= 1700 && window.scrollY <= 3455) {
                 links[2].classList.add('active')
             }
 
-            if(window.scrollY >= 3455 && window.scrollY <= 5900) {
+            if(window.scrollY >= 3455 && window.scrollY <= 6100) {
                 links[3].classList.add('active')
             }
 
@@ -59,15 +59,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
                 links[4].classList.add('active')
             }
 
-            if(window.scrollY >= 7000 && window.scrollY <= 7400) {
+            if(window.scrollY >= 7000 && window.scrollY <= 7615) {
                 links[5].classList.add('active')
             }
 
-            if(window.scrollY >= 7615 && window.scrollY <= 8433) {
+            if(window.scrollY >= 7615 && window.scrollY <= 8500) {
                 links[6].classList.add('active')
             }
 
-            if(window.scrollY >= 8500 && window.scrollY <= 9206) {
+            if(window.scrollY >= 8500 && window.scrollY <= 9500) {
                 links[7].classList.add('active')
             }
 
