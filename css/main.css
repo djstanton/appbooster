@@ -829,8 +829,8 @@ body {
     .ab__hiw-circle--main:before {
       left: 58px;
       top: 37px;
-      -webkit-animation: rotate360 11s linear infinite;
-      animation: rotate360 11s linear infinite;
+      -webkit-animation: rotate360 70s linear infinite;
+      animation: rotate360 70s linear infinite;
       -webkit-transform-origin: 187px 207px;
       transform-origin: 187px 207px;
       z-index: 1; }
@@ -839,8 +839,8 @@ body {
       height: 60px;
       left: 507px;
       top: 37px;
-      -webkit-animation: rotate360 20s linear infinite;
-      animation: rotate360 20s linear infinite;
+      -webkit-animation: rotate360 54s linear infinite;
+      animation: rotate360 54s linear infinite;
       -webkit-transform-origin: -260px 205px;
       transform-origin: -260px 205px; }
       @media only screen and (max-width: 721px) {
@@ -853,8 +853,8 @@ body {
     left: 116px;
     position: absolute;
     top: 0px;
-    -webkit-animation: rotate360 25s linear infinite;
-    animation: rotate360 25s linear infinite; }
+    -webkit-animation: rotate360 50s linear infinite;
+    animation: rotate360 50s linear infinite; }
     .ab__hiw-circle--mid:after {
       width: 102px;
       height: 102px;
@@ -1107,8 +1107,8 @@ body {
         bottom: -50px; } }
   .ab__section--available .ab__section-item--left .ab__section-circle--1, .ab__section--available .ab__section-item--right .ab__section-circle--1 {
     background: none;
-    -webkit-animation: rotate360 50s linear infinite;
-    animation: rotate360 50s linear infinite; }
+    -webkit-animation: rotate360 100s linear infinite;
+    animation: rotate360 100s linear infinite; }
     .ab__section--available .ab__section-item--left .ab__section-circle--1:before, .ab__section--available .ab__section-item--right .ab__section-circle--1:before {
       content: '';
       display: block;
@@ -1124,8 +1124,8 @@ body {
           left: calc(100% + 102px); } }
   .ab__section--available .ab__section-item--left .ab__section-circle--3, .ab__section--available .ab__section-item--right .ab__section-circle--3 {
     background: none;
-    -webkit-animation: rotate360m 40s linear infinite;
-    animation: rotate360m 40s linear infinite; }
+    -webkit-animation: rotate360m 80s linear infinite;
+    animation: rotate360m 80s linear infinite; }
     .ab__section--available .ab__section-item--left .ab__section-circle--3:before, .ab__section--available .ab__section-item--right .ab__section-circle--3:before {
       content: '';
       display: block;
@@ -1230,8 +1230,8 @@ body {
             width: 293px;
             height: 293px; } }
         .ab__section--analytic .ab__section-item--left .ab__section-circle--blue.ab__section-circle--1 {
-          -webkit-animation: rotate360 40s linear infinite;
-          animation: rotate360 40s linear infinite; }
+          -webkit-animation: rotate360 80s linear infinite;
+          animation: rotate360 80s linear infinite; }
           .ab__section--analytic .ab__section-item--left .ab__section-circle--blue.ab__section-circle--1:before, .ab__section--analytic .ab__section-item--left .ab__section-circle--blue.ab__section-circle--1:after {
             content: '';
             display: -webkit-flex;
@@ -1251,8 +1251,8 @@ body {
             width: 22px;
             height: 22px; }
         .ab__section--analytic .ab__section-item--left .ab__section-circle--blue.ab__section-circle--3 {
-          -webkit-animation: rotate360 60s linear infinite;
-          animation: rotate360 60s linear infinite; }
+          -webkit-animation: rotate360 120s linear infinite;
+          animation: rotate360 120s linear infinite; }
           .ab__section--analytic .ab__section-item--left .ab__section-circle--blue.ab__section-circle--3:before, .ab__section--analytic .ab__section-item--left .ab__section-circle--blue.ab__section-circle--3:after {
             content: '';
             display: -webkit-flex;
@@ -1273,8 +1273,8 @@ body {
             height: 65px;
             left: calc(100% + 97px);
             top: 29px;
-            -webkit-animation: rotate360m 60s linear infinite;
-            animation: rotate360m 60s linear infinite; }
+            -webkit-animation: rotate360m 120s linear infinite;
+            animation: rotate360m 120s linear infinite; }
       .ab__section--analytic .ab__section-item--left .ab__section-circle--yellow {
         background: #f6dd52;
         top: -75px;
@@ -1286,8 +1286,8 @@ body {
             width: 293px;
             height: 293px; } }
         .ab__section--analytic .ab__section-item--left .ab__section-circle--yellow.ab__section-circle--1 {
-          -webkit-animation: rotate360 40s linear infinite;
-          animation: rotate360 40s linear infinite; }
+          -webkit-animation: rotate360 80s linear infinite;
+          animation: rotate360 80s linear infinite; }
           .ab__section--analytic .ab__section-item--left .ab__section-circle--yellow.ab__section-circle--1:before, .ab__section--analytic .ab__section-item--left .ab__section-circle--yellow.ab__section-circle--1:after {
             content: '';
             display: -webkit-flex;
@@ -1307,8 +1307,8 @@ body {
             width: 22px;
             height: 22px; }
         .ab__section--analytic .ab__section-item--left .ab__section-circle--yellow.ab__section-circle--3 {
-          -webkit-animation: rotate360 60s linear infinite;
-          animation: rotate360 60s linear infinite; }
+          -webkit-animation: rotate360 120s linear infinite;
+          animation: rotate360 120s linear infinite; }
           .ab__section--analytic .ab__section-item--left .ab__section-circle--yellow.ab__section-circle--3:before, .ab__section--analytic .ab__section-item--left .ab__section-circle--yellow.ab__section-circle--3:after {
             content: '';
             display: -webkit-flex;
@@ -1329,8 +1329,8 @@ body {
             height: 65px;
             left: calc(100%);
             top: -23px;
-            -webkit-animation: rotate360m 60s linear infinite;
-            animation: rotate360m 60s linear infinite; }
+            -webkit-animation: rotate360m 120s linear infinite;
+            animation: rotate360m 120s linear infinite; }
     .ab__section--analytic .ab__section-item--right .ab__section-content {
       margin-right: auto; }
     @media only screen and (max-width: 721px) {
@@ -1350,8 +1350,8 @@ body {
           right: 50%;
           margin-right: -142px; } }
       .ab__section--analytic .ab__section-item--right .ab__section-circle--green.ab__section-circle--1 {
-        -webkit-animation: rotate360 40s linear infinite;
-        animation: rotate360 40s linear infinite; }
+        -webkit-animation: rotate360 80s linear infinite;
+        animation: rotate360 80s linear infinite; }
         .ab__section--analytic .ab__section-item--right .ab__section-circle--green.ab__section-circle--1:before, .ab__section--analytic .ab__section-item--right .ab__section-circle--green.ab__section-circle--1:after {
           content: '';
           display: -webkit-flex;
@@ -1371,8 +1371,8 @@ body {
           width: 22px;
           height: 22px; }
       .ab__section--analytic .ab__section-item--right .ab__section-circle--green.ab__section-circle--3 {
-        -webkit-animation: rotate360 60s linear infinite;
-        animation: rotate360 60s linear infinite; }
+        -webkit-animation: rotate360 120s linear infinite;
+        animation: rotate360 120s linear infinite; }
         .ab__section--analytic .ab__section-item--right .ab__section-circle--green.ab__section-circle--3:before, .ab__section--analytic .ab__section-item--right .ab__section-circle--green.ab__section-circle--3:after {
           content: '';
           display: -webkit-flex;
@@ -1393,8 +1393,8 @@ body {
           height: 65px;
           left: calc(100% + 22px);
           top: 445px;
-          -webkit-animation: rotate360m 60s linear infinite;
-          animation: rotate360m 60s linear infinite; }
+          -webkit-animation: rotate360m 120s linear infinite;
+          animation: rotate360m 120s linear infinite; }
         @media only screen and (max-width: 721px) {
           .ab__section--analytic .ab__section-item--right .ab__section-circle--green.ab__section-circle--3:after, .ab__section--analytic .ab__section-item--right .ab__section-circle--green.ab__section-circle--3:before {
             top: 200px; } }
@@ -1415,8 +1415,8 @@ body {
         .ab__section--analytic .ab__section-item--right .ab__section-circle--purple.ab__section-circles {
           position: static; } }
       .ab__section--analytic .ab__section-item--right .ab__section-circle--purple.ab__section-circle--1 {
-        -webkit-animation: rotate360 40s linear infinite;
-        animation: rotate360 40s linear infinite; }
+        -webkit-animation: rotate360 80s linear infinite;
+        animation: rotate360 80s linear infinite; }
         .ab__section--analytic .ab__section-item--right .ab__section-circle--purple.ab__section-circle--1:before, .ab__section--analytic .ab__section-item--right .ab__section-circle--purple.ab__section-circle--1:after {
           content: '';
           display: -webkit-flex;
@@ -1436,8 +1436,8 @@ body {
           width: 22px;
           height: 22px; }
       .ab__section--analytic .ab__section-item--right .ab__section-circle--purple.ab__section-circle--3 {
-        -webkit-animation: rotate360 60s linear infinite;
-        animation: rotate360 60s linear infinite; }
+        -webkit-animation: rotate360 120s linear infinite;
+        animation: rotate360 120s linear infinite; }
         .ab__section--analytic .ab__section-item--right .ab__section-circle--purple.ab__section-circle--3:before, .ab__section--analytic .ab__section-item--right .ab__section-circle--purple.ab__section-circle--3:after {
           content: '';
           display: -webkit-flex;
@@ -1458,8 +1458,8 @@ body {
           height: 65px;
           left: -63px;
           top: 228px;
-          -webkit-animation: rotate360m 60s linear infinite;
-          animation: rotate360m 60s linear infinite; }
+          -webkit-animation: rotate360m 120s linear infinite;
+          animation: rotate360m 120s linear infinite; }
         @media only screen and (max-width: 721px) {
           .ab__section--analytic .ab__section-item--right .ab__section-circle--purple.ab__section-circle--3:after, .ab__section--analytic .ab__section-item--right .ab__section-circle--purple.ab__section-circle--3:before {
             top: 200px; } }
@@ -1872,15 +1872,15 @@ body {
     height: 35px;
     -webkit-transform-origin: 55px -55px;
     transform-origin: 55px -55px;
-    -webkit-animation: rotate360 12s linear infinite;
-    animation: rotate360 12s linear infinite; }
+    -webkit-animation: rotate360 24s linear infinite;
+    animation: rotate360 24s linear infinite; }
   .ab__user-img:before {
     right: -20px;
     top: -12px;
     -webkit-transform-origin: -55px 66px;
     transform-origin: -55px 66px;
-    -webkit-animation: rotate360m 9s linear infinite;
-    animation: rotate360m 9s linear infinite; }
+    -webkit-animation: rotate360m 18s linear infinite;
+    animation: rotate360m 18s linear infinite; }
   .ab__user-img img {
     position: relative;
     z-index: 1;
@@ -1924,8 +1924,8 @@ body {
         left: auto;
         right: -10px; } }
     .ab__price .ab__section-circle.ab__section-circle--1 {
-      -webkit-animation: rotate360 40s linear infinite;
-      animation: rotate360 40s linear infinite; }
+      -webkit-animation: rotate360 80s linear infinite;
+      animation: rotate360 80s linear infinite; }
       .ab__price .ab__section-circle.ab__section-circle--1:before, .ab__price .ab__section-circle.ab__section-circle--1:after {
         content: '';
         display: -webkit-flex;
@@ -1945,8 +1945,8 @@ body {
         width: 14px;
         height: 14px; }
     .ab__price .ab__section-circle.ab__section-circle--3 {
-      -webkit-animation: rotate360m 60s linear infinite;
-      animation: rotate360m 60s linear infinite; }
+      -webkit-animation: rotate360m 120s linear infinite;
+      animation: rotate360m 120s linear infinite; }
       .ab__price .ab__section-circle.ab__section-circle--3:before, .ab__price .ab__section-circle.ab__section-circle--3:after {
         content: '';
         display: -webkit-flex;
@@ -2093,20 +2093,20 @@ body {
       height: 706px;
       margin-left: -353px; } }
   .ab__target-bg:hover .ab__target-planet--1-1 {
-    -webkit-animation: rotate360 70s linear infinite;
-    animation: rotate360 70s linear infinite; }
+    -webkit-animation: rotate360 140s linear infinite;
+    animation: rotate360 140s linear infinite; }
     .ab__target-bg:hover .ab__target-planet--1-1:before, .ab__target-bg:hover .ab__target-planet--1-1:after {
       -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
   .ab__target-bg:hover .ab__target-planet--2-1 {
-    -webkit-animation: rotate360m 60s linear infinite;
-    animation: rotate360m 60s linear infinite; }
+    -webkit-animation: rotate360m 120s linear infinite;
+    animation: rotate360m 120s linear infinite; }
     .ab__target-bg:hover .ab__target-planet--2-1:before, .ab__target-bg:hover .ab__target-planet--2-1:after {
       -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
   .ab__target-bg:hover .ab__target-planet--3-1 {
-    -webkit-animation: rotate360 55s linear infinite;
-    animation: rotate360 55s linear infinite; }
+    -webkit-animation: rotate360 110s linear infinite;
+    animation: rotate360 110s linear infinite; }
     .ab__target-bg:hover .ab__target-planet--3-1:before, .ab__target-bg:hover .ab__target-planet--3-1:after {
       -webkit-transform: translate(0, 0);
       transform: translate(0, 0); }
@@ -2126,8 +2126,8 @@ body {
       height: 706px; } }
   .ab__target-planet--1 {
     background: url(../assets/svg/circle-biggest.svg) no-repeat center;
-    -webkit-animation: rotate360 70s linear infinite;
-    animation: rotate360 70s linear infinite; }
+    -webkit-animation: rotate360 120s linear infinite;
+    animation: rotate360 120s linear infinite; }
     @media only screen and (max-width: 721px) {
       .ab__target-planet--1 {
         background-size: 706px; } }
@@ -2157,8 +2157,8 @@ body {
   .ab__target-planet--2 {
     background: url(../assets/svg/circle-big.svg) no-repeat center;
     background-size: 848px;
-    -webkit-animation: rotate360m 60s linear infinite;
-    animation: rotate360m 60s linear infinite; }
+    -webkit-animation: rotate360m 110s linear infinite;
+    animation: rotate360m 110s linear infinite; }
     @media only screen and (max-width: 721px) {
       .ab__target-planet--2 {
         background-size: 616px; } }
@@ -2639,7 +2639,8 @@ body {
     z-index: 1; }
   .ab__footer-logo .svg-icon {
     position: relative;
-    z-index: 2; }
+    z-index: 2;
+    margin-left: -37px; }
   .ab__footer-logo .svg-logo-left {
     width: 146px;
     height: 47px;

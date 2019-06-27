@@ -526,7 +526,7 @@ body {
       &:before {
         left: 58px;
         top: 37px;
-        animation: rotate360 11s linear infinite;
+        animation: rotate360 70s linear infinite;
         transform-origin: 187px 207px;
         z-index: 1;
       }
@@ -536,7 +536,7 @@ body {
         height: 60px;
         left: 507px;
         top: 37px;
-        animation: rotate360 20s linear infinite;
+        animation: rotate360 54s linear infinite;
         transform-origin: -260px 205px;
 
         @include respond-to(handhelds) {
@@ -552,7 +552,7 @@ body {
       left: 116px;
       position: absolute;
       top: 0px;
-      animation: rotate360 25s linear infinite;
+      animation: rotate360 50s linear infinite;
 
       &:after {
         width: 102px;
@@ -835,7 +835,7 @@ body {
 
           .ab__section-circle--1 {
             background: none;
-            animation: rotate360 50s linear infinite;
+            animation: rotate360 100s linear infinite;
 
             &:before {
               content: '';
@@ -856,7 +856,7 @@ body {
 
           .ab__section-circle--3 {
             background: none;
-            animation: rotate360m 40s linear infinite;
+            animation: rotate360m 80s linear infinite;
 
             &:before {
               content: '';
@@ -990,7 +990,7 @@ body {
 
               &.ab__section-circle {
                 &--1 {
-                  animation: rotate360 40s linear infinite;
+                  animation: rotate360 80s linear infinite;
 
                   &:before, &:after {
                     content: '';
@@ -1016,7 +1016,7 @@ body {
                 }
 
                 &--3 {
-                  animation: rotate360 60s linear infinite;
+                  animation: rotate360 120s linear infinite;
 
                   &:before, &:after {
                     content: '';
@@ -1040,7 +1040,7 @@ body {
                     height: 65px;
                     left: calc(100% + 97px);
                     top: 29px;
-                    animation: rotate360m 60s linear infinite;
+                    animation: rotate360m 120s linear infinite;
                   }
                 }
               }
@@ -1060,7 +1060,7 @@ body {
 
               &.ab__section-circle {
                 &--1 {
-                  animation: rotate360 40s linear infinite;
+                  animation: rotate360 80s linear infinite;
 
                   &:before, &:after {
                     content: '';
@@ -1086,7 +1086,7 @@ body {
                 }
 
                 &--3 {
-                  animation: rotate360 60s linear infinite;
+                  animation: rotate360 120s linear infinite;
 
                   &:before, &:after {
                     content: '';
@@ -1110,7 +1110,7 @@ body {
                     height: 65px;
                     left: calc(100%);
                     top: -23px;
-                    animation: rotate360m 60s linear infinite;
+                    animation: rotate360m 120s linear infinite;
                   }
                 }
               }
@@ -1147,7 +1147,7 @@ body {
 
               &.ab__section-circle {
                 &--1 {
-                  animation: rotate360 40s linear infinite;
+                  animation: rotate360 80s linear infinite;
 
                   &:before, &:after {
                     content: '';
@@ -1173,7 +1173,7 @@ body {
                 }
 
                 &--3 {
-                  animation: rotate360 60s linear infinite;
+                  animation: rotate360 120s linear infinite;
 
                   &:before, &:after {
                     content: '';
@@ -1197,7 +1197,7 @@ body {
                     height: 65px;
                     left: calc(100% + 22px);
                     top: 445px;
-                    animation: rotate360m 60s linear infinite;
+                    animation: rotate360m 120s linear infinite;
                   }
 
                   @include respond-to(handhelds) {
@@ -1232,7 +1232,7 @@ body {
               &.ab__section-circle {
 
                 &--1 {
-                  animation: rotate360 40s linear infinite;
+                  animation: rotate360 80s linear infinite;
 
                   &:before, &:after {
                     content: '';
@@ -1258,7 +1258,7 @@ body {
                 }
 
                 &--3 {
-                  animation: rotate360 60s linear infinite;
+                  animation: rotate360 120s linear infinite;
 
                   &:before, &:after {
                     content: '';
@@ -1282,7 +1282,7 @@ body {
                     height: 65px;
                     left: -63px;
                     top: 228px;
-                    animation: rotate360m 60s linear infinite;
+                    animation: rotate360m 120s linear infinite;
                   }
 
                   @include respond-to(handhelds) {
@@ -1813,14 +1813,14 @@ body {
       width: 35px;
       height: 35px;
       transform-origin: 55px -55px;
-      animation: rotate360 12s linear infinite;
+      animation: rotate360 24s linear infinite;
     }
 
     &:before {
       right: -20px;
       top: -12px;
       transform-origin: -55px 66px;
-      animation: rotate360m 9s linear infinite;
+      animation: rotate360m 18s linear infinite;
     }
 
     img {
@@ -1879,7 +1879,7 @@ body {
 
       &.ab__section-circle {
         &--1 {
-          animation: rotate360 40s linear infinite;
+          animation: rotate360 80s linear infinite;
 
           &:before, &:after {
             content: '';
@@ -1905,7 +1905,7 @@ body {
         }
 
         &--3 {
-          animation: rotate360m 60s linear infinite;
+          animation: rotate360m 120s linear infinite;
 
           &:before, &:after {
             content: '';
@@ -2080,14 +2080,14 @@ body {
       .ab {
         &__target-planet {
           &--1-1 {
-            animation: rotate360 70s linear infinite;
+            animation: rotate360 140s linear infinite;
 
             &:before, &:after {
               transform: translate(0,0);
             }
           }
           &--2-1 {
-            animation: rotate360m 60s linear infinite;
+            animation: rotate360m 120s linear infinite;
 
             &:before, &:after {
               transform: translate(0,0);
@@ -2095,7 +2095,7 @@ body {
           }
 
           &--3-1 {
-            animation: rotate360 55s linear infinite;
+            animation: rotate360 110s linear infinite;
 
             &:before, &:after {
               transform: translate(0,0);
@@ -2121,7 +2121,7 @@ body {
 
     &--1 {
       background: url(../assets/svg/circle-biggest.svg) no-repeat center;
-      animation: rotate360 70s linear infinite;
+      animation: rotate360 120s linear infinite;
 
       @include respond-to(handhelds) {
         background-size: 706px;
@@ -2158,7 +2158,7 @@ body {
     &--2 {
       background: url(../assets/svg/circle-big.svg) no-repeat center;
       background-size: 848px;
-      animation: rotate360m 60s linear infinite;
+      animation: rotate360m 110s linear infinite;
 
       @include respond-to(handhelds) {
         background-size: 616px;
@@ -2697,6 +2697,7 @@ body {
     .svg-icon {
       position: relative;
       z-index: 2;
+      margin-left: -37px;
     }
 
     .svg-logo-left {
