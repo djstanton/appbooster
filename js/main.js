@@ -13,12 +13,105 @@ document.addEventListener("DOMContentLoaded", function(event) {
         speed: 800
     });
 
+    Highcharts.chart('container', {
+        title: {
+            text: ''
+        },
+        yAxis: {
+            max: 7,
+            visible: false,
+            labels: {
+                enabled: false
+            },
+        },
+        credits: {
+            enabled: false
+        },
+        xAxis: {
+            visible: false,
+            labels: {
+                enabled: false
+            },
+        },
+
+        legend: {
+            enabled: false
+        },
+        exporting: {
+            enabled: false,
+        },
+        series: [{
+            title: 'Рейтинг',
+            data: [2, 2.7, 2.7, 3.7, 4.1, 4.7],
+            tooltip: {
+                headerFormat: '',
+                pointFormat: '<div class="svg-icon svg-star-orange svg-star-orange-dims">  <b>{point.y}</b><br/>'
+            }
+        }],
+        chart: {
+            backgroundColor: 'transparent'
+        },
+        plotOptions: {
+
+            line: {
+                marker: {
+                    enabled: false,
+                    states: {
+                        hover: {
+                            enabled: true,
+                            fillColor: '#ffffff'
+                        }
+                    }
+                },
+                color: '#f5a623',
+                label: {
+                    enabled: false
+                }
+            },
+            series: {
+                shadow: true
+            },
+            bullet: {
+                visible: false
+            }
+        },
+
+        responsive: {
+            rules: [{
+                condition: {
+                    maxWidth: 500
+                },
+                chartOptions: {
+                    legend: {
+                        layout: 'horizontal',
+                        align: 'center',
+                        verticalAlign: 'bottom'
+                    }
+                }
+            }]
+        }
+
+    });
+
     generateNav();
 
     var menuBtns = document.querySelectorAll('.js-toggle-menu');
     var items = document.querySelectorAll('.js-section');
     var links = document.querySelectorAll('.js-nav-link');
+    var topCutBtn = document.querySelector('.js-cut-top-btn');
+    var topCutBtn2 = document.querySelector('.js-cut-btn');
+    var topCut = document.querySelector('.js-cut-top');
+    var topCut2 = document.querySelector('.js-cut');
+    var actionBtn = document.querySelectorAll('.js-action');
+    var registrationPopup = document.querySelector('.js-registration-popup');
+    var ppCloseBtn = document.querySelector('.js-close-pp');
+    var ppAcceptBtn = document.querySelector('.js-accept-pp');
+    var ppWrap = document.querySelector('.js-pp-wrap');
     var timeout = 0;
+
+    if(!sessionStorage.getItem('ppAccepted')) {
+        ppWrap.classList.add('shown');
+    }
 
     parts = document.querySelectorAll('.js-part');
 
@@ -27,6 +120,33 @@ document.addEventListener("DOMContentLoaded", function(event) {
     for (var i = 0; i < menuBtns.length; i++) {
         menuBtns[i].addEventListener("click", toggleMenu);
     }
+
+    for (var i = 0; i < actionBtn.length; i++) {
+        actionBtn[i].addEventListener("click", toggleRegistrationPopup);
+    }
+
+    topCutBtn.addEventListener("click", function () {
+        topCut.classList.add('shown');
+        topCutBtn.classList.add('hidden');
+    });
+
+    ppCloseBtn.addEventListener("click", function () {
+        ppWrap.classList.remove('shown');
+    });
+
+    ppAcceptBtn.addEventListener("click", function () {
+        ppWrap.classList.remove('shown');
+        sessionStorage.setItem('ppAccepted', true);
+    });
+
+    topCutBtn2.addEventListener("click", function () {
+        topCut2.classList.add('shown');
+        topCutBtn2.classList.add('hidden');
+    });
+
+    actionBtn.addEventListener("click", function () {
+        registrationPopup.classList.add('shown');
+    });
 
     document.addEventListener("scroll", function() {
         clearTimeout(timeout);
@@ -138,6 +258,16 @@ function checkThingItem() {
 
 function toggleMenu() {
     var overlay = document.querySelector('.js-menu-overlay');
+
+    if(overlay.classList.contains('shown')) {
+        overlay.classList.remove('shown');
+    } else {
+        overlay.classList.add('shown');
+    }
+}
+
+function toggleRegistrationPopup() {
+    var overlay = document.querySelector('.js-reg-overlay');
 
     if(overlay.classList.contains('shown')) {
         overlay.classList.remove('shown');

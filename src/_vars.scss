@@ -1,0 +1,392 @@
+// Variables
+//
+// Variables should follow the `$component-state-property-size` formula for
+// consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+//
+// Color system
+//
+
+// stylelint-disable
+$white:         #fff;
+$gray-100:      #f8f9fa;
+$gray-300:      #f8f9fa;
+$gray-600:      #f8f9fa;
+$black:         #000;
+
+$blue-light:    #4A90E2;
+$blue:          #24496f;
+$blue-dark:     #11223e;
+$pink:          #fc3969;
+$red:           #d0021b;
+$yellow:        #FBEC79;
+$green:         #75B926;
+
+$facebook:      #475A96;
+$vk:            #5181B8;
+
+$text-primary:      $blue-dark;
+$text-secondary:    rgba($blue-dark, .5);
+
+$text-primary-light: $white;
+$text-secondary-light: rgba($white, .85);
+
+$colors: ();
+$colors: map-merge((
+    'blue-light': $blue-light,
+    'blue':       $blue,
+    'blue-dark':  $blue-dark,
+    'pink':       $pink,
+    'red':        $red,
+    'yellow':     $yellow,
+    'green':      $green,
+    'white':      $white,
+    'black':      $black,
+), $colors);
+
+$primary:       $pink;
+$success:       $green;
+$secondary:     $blue;
+$info:          $blue-light;
+$warning:       $yellow;
+$danger:        $red;
+$light:         $gray-100;
+$dark:          $black;
+
+$theme-colors: ();
+$theme-colors: map-merge((
+    'primary':    $primary,
+    'secondary':  $secondary,
+    'success':    $success,
+    'info':       $info,
+    'warning':    $warning,
+    'danger':     $danger,
+    'light':      $light,
+    'dark':       $dark
+), $theme-colors);
+// stylelint-enable
+
+// Spacing
+//
+// Control the default styling of most Bootstrap elements by modifying these
+// variables. Mostly focused on spacing.
+// You can add more entries to the $spacers map, should you need more variation.
+
+// stylelint-disable
+$spacer: 1.25rem;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg:                   $gray-100;
+$body-color:                $text-secondary;
+
+// Links
+//
+// Style anchor elements.
+
+$link-color:                theme-color('info');
+$link-decoration:           none;
+$link-hover-decoration:     none;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 640px,
+    md: 768px,
+    lg: 1020px,
+    xl: 1280px,
+    xll: 1400px
+);
+
+// Grid columns
+//
+// Set the number of columns and specify the width of the gutters.
+
+$grid-columns:                12;
+$grid-gutter-width:           30px;
+
+// Components
+//
+// Define common padding and border radius sizes and more.
+
+$border-width:                1px;
+$border-color:                rgba($blue-dark, .05);
+$border-radius:               .3125rem;
+
+$transition-base:             all .2s ease-in-out;
+$transition-fade:             opacity .15s linear;
+$transition-collapse:         height .35s ease;
+
+// Fonts
+//
+// Font, line-height, and color for body text, headings, and more.
+
+// stylelint-disable value-keyword-case
+$font-family-sans-serif:      -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+$font-family-base:            'Harmonia Sans Pro Cyr', $font-family-sans-serif;
+// stylelint-enable value-keyword-case
+
+$font-size-base:              .875rem;
+
+$font-weight-light:           300;
+$font-weight-normal:          400;
+$font-weight-bold:            600;
+
+$font-weight-base:            $font-weight-normal;
+$line-height-base:            1.75;
+
+$headings-margin-bottom:      1.25rem;
+$headings-font-family:        inherit;
+$headings-font-weight:        400;
+$headings-line-height:        1.1;
+$headings-color:              $text-primary;
+
+// Cards
+
+$card-spacer-y:                     .75rem;
+$card-spacer-x:                     1.25rem;
+$card-border-width:                 $border-width;
+$card-border-radius:                $border-radius;
+$card-border-color:                 $border-color;
+$card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width});
+$card-cap-bg:                       rgba($black, .03);
+$card-bg:                           $white;
+
+$card-img-overlay-padding:          1.25rem;
+
+
+
+// Buttons + Forms
+//
+// Shared variables that are reassigned to `$input-` and `$btn-` specific variables.
+
+$input-btn-padding-y:           .4375rem;
+$input-btn-padding-x:           1.25rem;
+$input-btn-line-height:         1.5;
+
+$input-btn-padding-y-sm:        .1875rem;
+$input-btn-padding-x-sm:        .9375rem;
+
+$input-btn-border-width:      $border-width;
+
+
+// Buttons
+//
+// For each of Bootstrap's buttons, define text, background, and border color.
+
+$btn-padding-y:               $input-btn-padding-y;
+$btn-padding-x:               $input-btn-padding-x;
+$btn-line-height:             $input-btn-line-height;
+
+$btn-padding-y-sm:            $input-btn-padding-y-sm;
+$btn-padding-x-sm:            $input-btn-padding-x-sm;
+$btn-line-height-sm:          $input-btn-line-height;
+
+$btn-border-width:            $input-btn-border-width;
+
+$btn-font-weight:             $font-weight-bold;
+$btn-disabled-opacity:        .3;
+
+$btn-link-disabled-color:     $gray-600;
+
+$btn-block-spacing-y:         .5rem;
+
+// Allows for customizing button radius independently from global border radius
+$btn-border-radius:           $border-radius;
+
+$btn-transition:              color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+
+
+// Forms
+
+$label-margin-bottom:                   $grid-gutter-width/2;
+
+$input-padding-y:                       $input-btn-padding-y;
+$input-padding-x:                       $input-btn-padding-x;
+$input-line-height:                     $input-btn-line-height;
+
+
+$input-padding-y-sm:                    $input-btn-padding-y-sm;
+$input-padding-x-sm:                    $input-btn-padding-x-sm;
+$input-line-height-sm:                  $input-btn-line-height;
+
+$input-bg:                              $white;
+
+$input-color:                           $text-primary;
+$input-border-color:                    $border-color;
+$input-border-width:                    $input-btn-border-width;
+$input-box-shadow:                      0 0 6px rgba(17, 34, 62, .1);
+
+$input-border-radius:                   $border-radius;
+
+$input-focus-bg:                        $input-bg;
+$input-focus-border-color:              rgba($blue-dark, .3);;
+$input-focus-color:                     $input-color;
+
+$input-placeholder-color:               rgba($blue-dark, .7);
+$input-plaintext-color:                 $body-color;
+
+$input-height-border:                   $input-border-width * 2;
+
+$input-height-inner:                    (1rem * $input-btn-line-height) + ($input-btn-padding-y * 2);
+$input-height:                          calc(#{$input-height-inner} + #{$input-height-border});
+
+$input-transition:                      border-color .15s ease-in-out, box-shadow .15s ease-in-out, color .15s ease-in-out, background .15s ease-in-out;
+
+$form-text-margin-top:                  .25rem;
+
+$form-check-input-gutter:               1.25rem;
+$form-check-input-margin-y:             .3rem;
+$form-check-input-margin-x:             .25rem;
+
+$form-check-inline-margin-x:            .75rem;
+$form-check-inline-input-margin-x:      .3125rem;
+
+$form-group-margin-bottom:              1.25rem;
+
+// Datepicker
+//
+// React Datepicker components.
+
+$datepicker__background-color: $white;
+$datepicker__border-color: $white;
+$datepicker__highlighted-color: $primary;
+$datepicker__muted-color: $text-secondary !default;
+$datepicker__selected-color: $primary;
+$datepicker__text-color: $text-primary;
+$datepicker__header-color: $text-primary;
+$datepicker__navigation-disabled-color: lighten($datepicker__muted-color, 10%)
+  !default;
+
+$datepicker__border-radius: .3125rem;
+$datepicker__day-margin: 0;
+$datepicker__font-size: $font-size-base;
+$datepicker__font-family: inherit;
+$datepicker__item-size: 2.125rem;
+$datepicker__margin: 0.4rem !default;
+$datepicker__navigation-size: 1.5rem;
+$datepicker__triangle-size: 12px;
+
+
+
+
+// Dropdowns
+//
+// Dropdown menu container and contents.
+
+$dropdown-min-width:                10rem;
+$dropdown-padding-y:                1.25rem;
+$dropdown-padding-x:                1.875rem;
+$dropdown-spacer:                   1rem;
+$dropdown-bg:                       $white;
+$dropdown-border-color:             $white;
+$dropdown-border-radius:            $border-radius;
+$dropdown-border-width:             $border-width;
+$dropdown-divider-bg:               $border-color;
+$dropdown-box-shadow:               0 .9375rem 1.875rem rgba($black, .15);
+
+$dropdown-link-color:               $text-primary;
+$dropdown-link-hover-bg:            $dropdown-bg;
+
+$dropdown-link-disabled-color:      $gray-600;
+
+$dropdown-item-padding-y:           .5rem;
+$dropdown-item-padding-x:           0;
+
+$dropdown-header-color:             $gray-600;
+
+
+// Tables
+//
+// Customizes the `.table` component with basic values, each used across all table variations.
+
+$table-cell-padding:          .8125rem 1.875rem;
+
+$table-bg:                    $white;
+$table-accent-bg:             $gray-100;
+
+$table-border-width:          $border-width;
+$table-border-color:          $border-color;
+
+$table-head-color:            $text-secondary;
+
+$table-striped-order:         odd;
+
+
+// Pagination
+
+$pagination-padding-y:              10px;
+$pagination-padding-x:              10px;
+$pagination-line-height:            1.35;
+
+$pagination-color:                  $text-secondary;
+$pagination-bg:                     $white;
+$pagination-border-width:           $border-width;
+$pagination-border-color:           $gray-300;
+
+$pagination-focus-outline:          0;
+
+$pagination-hover-border-color:     $gray-300;
+
+$pagination-active-color:           $text-primary;
+$pagination-active-bg:              $pagination-bg;
+$pagination-active-border-color:    $text-primary;
+
+$pagination-disabled-color:         $gray-600;
+$pagination-disabled-bg:            $white;
+$pagination-disabled-border-color:  $gray-300;
+
+
+
+// Badges
+
+$badge-font-size:                   85%;
+$badge-font-weight:                 $font-weight-normal;
+$badge-padding:                     .25em .25em .125em;
+$badge-border-radius:               $border-radius;
+
+$badge-pill-padding-x:              .6em;
+// Use a higher than normal value to ensure completely rounded edges when
+// customizing padding or font-size on labels.
+$badge-pill-border-radius:          10rem;
+
+
+// Alerts
+//
+// Define alert colors, border radius, and padding.
+
+$alert-padding-y:                   .5rem;
+$alert-padding-x:                   1rem;
+$alert-margin-bottom:               1rem;
+$alert-border-radius:               $border-radius;
+$alert-link-font-weight:            $font-weight-bold;
+$alert-border-width:                $border-width;
+
+$alert-bg-level:                    -10;
+$alert-border-level:                -9;
+$alert-color-level:                 6;
+
+// Tooltips
+$tooltip-font-size:                 12px;
+$tooltip-max-width:                 200px;
+$tooltip-color:                     $text-primary;
+$tooltip-bg:                        $white;
+$tooltip-border-color:              $border-color;
+$tooltip-border-width:              $border-width;
+$tooltip-border-radius:             $border-radius;
+$tooltip-opacity:                   .9;
+$tooltip-padding-y:                 1rem;
+$tooltip-padding-x:                 1.25rem;
+$tooltip-margin:                    0;
+$tooltip-shadow:                    0 .9375rem 1.875rem rgba($black, .15);
+
+$tooltip-arrow-width:               1rem;
+$tooltip-arrow-height:              .5rem;
+$tooltip-arrow-color:               $tooltip-bg;

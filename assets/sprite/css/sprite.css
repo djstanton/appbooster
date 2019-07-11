@@ -1,279 +1,360 @@
 .svg-a {
-	background: url("svg/sprite.css-f40cd4cc.svg") 46.610814927646615% 0 no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 0 0 no-repeat;
 }
 
 .svg-a-dims {
-	width: 412.2px;
-	height: 420px;
+	width: 392.2px;
+	height: 400px;
+}
+
+.svg-android {
+	background: url("svg/sprite.css-c466fdbd.svg") 71.14695340501792% 59.922680412371136% no-repeat;
+}
+
+.svg-android-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-apple {
+	background: url("svg/sprite.css-c466fdbd.svg") 94.26523297491039% 54.25257731958763% no-repeat;
+}
+
+.svg-apple-dims {
+	width: 24px;
+	height: 24px;
 }
 
 .svg-arrow-right {
-	background: url("svg/sprite.css-f40cd4cc.svg") 84.98293515358361% 50.93922651933702% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 76.76678445229682% 59.16030534351145% no-repeat;
 }
 
 .svg-arrow-right-dims {
-	width: 28px;
-	height: 34px;
+	width: 8px;
+	height: 14px;
 }
 
 .svg-circle {
-	background: url("svg/sprite.css-f40cd4cc.svg") 0 100% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 73.23279924599434% 80.02773925104022% no-repeat;
 }
 
 .svg-circle-dims {
-	width: 99px;
-	height: 99px;
+	width: 79px;
+	height: 79px;
 }
 
 .svg-circle-big {
-	background: url("svg/sprite.css-f40cd4cc.svg") 99.92307692307692% 0 no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 99.91891891891892% 0 no-repeat;
 }
 
 .svg-circle-big-dims {
-	width: 420px;
-	height: 420px;
+	width: 400px;
+	height: 400px;
 }
 
 .svg-circle-biggest {
-	background: url("svg/sprite.css-f40cd4cc.svg") 0 80.92485549132948% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 0 100% no-repeat;
 }
 
 .svg-circle-biggest-dims {
-	width: 420px;
-	height: 420px;
+	width: 400px;
+	height: 400px;
 }
 
 .svg-circle-line-end {
-	background: url("svg/sprite.css-f40cd4cc.svg") 93.07692307692308% 50.71507150715072% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 99.46902654867256% 55.063291139240505% no-repeat;
 }
 
 .svg-circle-line-end-dims {
-	width: 30px;
-	height: 30px;
+	width: 10px;
+	height: 10px;
 }
 
 .svg-drop {
-	background: url("svg/sprite.css-f40cd4cc.svg") 90.50470487596236% 50.77092511013216% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 94.77413640389726% 50.69708491761724% no-repeat;
 }
 
 .svg-drop-dims {
-	width: 31px;
-	height: 31px;
+	width: 11px;
+	height: 11px;
 }
 
 .svg-fb {
-	background: url("svg/sprite.css-f40cd4cc.svg") 99.8280309544282% 67.19101123595506% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 96.97239536954586% 64.85084306095979% no-repeat;
 }
 
 .svg-fb-dims {
-	width: 37px;
-	height: 49px;
+	width: 17px;
+	height: 29px;
 }
 
 .svg-free {
-	background: url("svg/sprite.css-f40cd4cc.svg") 90.38461538461539% 60.47032474804031% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 92.02898550724638% 54.39276485788114% no-repeat;
 }
 
 .svg-free-dims {
-	width: 56px;
-	height: 46px;
+	width: 36px;
+	height: 26px;
 }
 
 .svg-heart {
-	background: url("svg/sprite.css-f40cd4cc.svg") 79.15590008613265% 51.108647450110865% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 72.97056199821589% 59.38697318007663% no-repeat;
 }
 
 .svg-heart-dims {
-	width: 39px;
-	height: 37px;
+	width: 19px;
+	height: 17px;
 }
 
 .svg-icon-1 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 64.31095406360424% 85.3211009174312% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 86.81318681318682% 76.62682602921647% no-repeat;
 }
 
 .svg-icon-1-dims {
-	width: 68px;
-	height: 67px;
+	width: 48px;
+	height: 47px;
 }
 
 .svg-icon-2 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 14.700704225352112% 96.44087256027555% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 78.10218978102189% 76.72872340425532% no-repeat;
 }
 
 .svg-icon-2-dims {
-	width: 64px;
-	height: 68px;
+	width: 44px;
+	height: 48px;
 }
 
 .svg-icon-3 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 96.55172413793103% 68.18700114025086% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 90.92575618698442% 65.96306068601584% no-repeat;
 }
 
 .svg-icon-3-dims {
-	width: 69px;
-	height: 62px;
+	width: 49px;
+	height: 42px;
 }
 
 .svg-icon-4 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 8.745583038869258% 96.44087256027555% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 82.41758241758242% 76.72872340425532% no-repeat;
 }
 
 .svg-icon-4-dims {
-	width: 68px;
-	height: 68px;
+	width: 48px;
+	height: 48px;
 }
 
 .svg-icon-5 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 70.31802120141343% 84.83466362599772% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 95.32967032967034% 65.96306068601584% no-repeat;
 }
 
 .svg-icon-5-dims {
-	width: 68px;
-	height: 62px;
+	width: 48px;
+	height: 42px;
+}
+
+.svg-ios {
+	background: url("svg/sprite.css-c466fdbd.svg") 96.415770609319% 54.25257731958763% no-repeat;
+}
+
+.svg-ios-dims {
+	width: 24px;
+	height: 24px;
 }
 
 .svg-line-2 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 89.95348837209302% 68.57798165137615% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 85.70048309178743% 66.40106241699867% no-repeat;
 }
 
 .svg-line-2-dims {
-	width: 125px;
-	height: 67px;
+	width: 105px;
+	height: 47px;
 }
 
 .svg-line-3 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 78.22429906542057% 71.02137767220903% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 75.4368932038835% 69.15629322268326% no-repeat;
 }
 
 .svg-line-3-dims {
-	width: 130px;
-	height: 97px;
+	width: 110px;
+	height: 77px;
 }
 
 .svg-line-4 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 66.72777268560954% 73.46938775510205% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 65.46146527117031% 81.16883116883118% no-repeat;
 }
 
 .svg-line-4-dims {
-	width: 109px;
-	height: 204px;
+	width: 89px;
+	height: 184px;
 }
 
 .svg-line-5 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 72.47796278158668% 49.18032786885246% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 71.35575942915392% 54.42176870748299% no-repeat;
 }
 
 .svg-line-5-dims {
-	width: 179px;
-	height: 85px;
+	width: 159px;
+	height: 65px;
 }
 
 .svg-line-6 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 78.22429906542057% 61.29398410896708% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 83.39805825242719% 55.249343832021% no-repeat;
 }
 
 .svg-line-6-dims {
-	width: 130px;
-	height: 58px;
+	width: 110px;
+	height: 38px;
 }
 
 .svg-line1 {
-	background: url("svg/sprite.css-f40cd4cc.svg") 85.96819457436857% 46.770601336302896% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 83.47910592808552% 51.34788189987163% no-repeat;
 }
 
 .svg-line1-dims {
-	width: 131px;
-	height: 41px;
+	width: 111px;
+	height: 21px;
 }
 
 .svg-logo-a {
-	background: url("svg/sprite.css-f40cd4cc.svg") 0 0 no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 49.47023208879919% 0 no-repeat;
 }
 
 .svg-logo-a-dims {
-	width: 367.2px;
-	height: 420px;
+	width: 347.2px;
+	height: 400px;
 }
 
 .svg-logo-left {
-	background: url("svg/sprite.css-f40cd4cc.svg") 47.72727272727273% 51.282051282051285% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 47.61904761904762% 57.142857142857146% no-repeat;
 }
 
 .svg-logo-left-dims {
-	width: 320px;
-	height: 120px;
+	width: 300px;
+	height: 100px;
 }
 
 .svg-logo-right {
-	background: url("svg/sprite.css-f40cd4cc.svg") 95.19492293744334% 46.666666666666664% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 91.25117591721543% 51.21638924455826% no-repeat;
 }
 
 .svg-logo-right-dims {
-	width: 97px;
-	height: 39px;
+	width: 77px;
+	height: 19px;
 }
 
 .svg-m {
-	background: url("svg/sprite.css-f40cd4cc.svg") 72.97297297297297% 77.91479820627802% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 66.57633242999097% 60.15523932729625% no-repeat;
 }
 
 .svg-m-dims {
-	width: 53px;
-	height: 47px;
+	width: 33px;
+	height: 27px;
 }
 
 .svg-menu {
-	background: url("svg/sprite.css-f40cd4cc.svg") 82.44406196213426% 50.93922651933702% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 74.59893048128342% 59.16030534351145% no-repeat;
 }
 
 .svg-menu-dims {
-	width: 38px;
-	height: 34px;
+	width: 18px;
+	height: 14px;
+}
+
+.svg-next {
+	background: url("svg/sprite.css-c466fdbd.svg") 96.02824360105913% 50.63291139240506% no-repeat;
+}
+
+.svg-next-dims {
+	width: 7px;
+	height: 10px;
+}
+
+.svg-prev {
+	background: url("svg/sprite.css-c466fdbd.svg") 95.41041482789056% 50.63291139240506% no-repeat;
+}
+
+.svg-prev-dims {
+	width: 7px;
+	height: 10px;
 }
 
 .svg-quit {
-	background: url("svg/sprite.css-f40cd4cc.svg") 99.13569576490924% 46.30650496141124% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 93.7332139659803% 50.76142131979695% no-repeat;
 }
 
 .svg-quit-dims {
-	width: 43px;
-	height: 32px;
+	width: 23px;
+	height: 12px;
+}
+
+.svg-star {
+	background: url("svg/sprite.css-c466fdbd.svg") 98.5663082437276% 54.25257731958763% no-repeat;
+}
+
+.svg-star-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-star-orange {
+	background: url("svg/sprite.css-c466fdbd.svg") 75.93250444049734% 59.16030534351145% no-repeat;
+}
+
+.svg-star-orange-dims {
+	width: 14px;
+	height: 14px;
 }
 
 .svg-start {
-	background: url("svg/sprite.css-f40cd4cc.svg") 47.08520179372197% 83.85093167701864% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 46.948356807511736% 95.23809523809524% no-repeat;
 }
 
 .svg-start-dims {
-	width: 308px;
-	height: 295px;
+	width: 288px;
+	height: 275px;
 }
 
 .svg-tg {
-	background: url("svg/sprite.css-f40cd4cc.svg") 75.59055118110236% 83.78378378378379% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 63.46328195829556% 60.468140442132636% no-repeat;
 }
 
 .svg-tg-dims {
-	width: 57px;
-	height: 51px;
+	width: 37px;
+	height: 31px;
+}
+
+.svg-tinkoff {
+	background: url("svg/sprite.css-c466fdbd.svg") 68.99641577060932% 59.922680412371136% no-repeat;
+}
+
+.svg-tinkoff-dims {
+	width: 24px;
+	height: 24px;
+}
+
+.svg-up-pink {
+	background: url("svg/sprite.css-c466fdbd.svg") 96.90265486725664% 50.377833753148614% no-repeat;
+}
+
+.svg-up-pink-dims {
+	width: 10px;
+	height: 6px;
 }
 
 .svg-vk {
-	background: url("svg/sprite.css-f40cd4cc.svg") 85.3486319505737% 60.53811659192825% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 88.65507776761207% 54.46313065976714% no-repeat;
 }
 
 .svg-vk-dims {
-	width: 67px;
-	height: 47px;
+	width: 47px;
+	height: 27px;
 }
 
 .svg-x {
-	background: url("svg/sprite.css-f40cd4cc.svg") 87.82161234991423% 50.93922651933702% no-repeat;
+	background: url("svg/sprite.css-c466fdbd.svg") 99.82238010657194% 53.56234096692112% no-repeat;
 }
 
 .svg-x-dims {
-	width: 34px;
-	height: 34px;
+	width: 14px;
+	height: 14px;
 }
 

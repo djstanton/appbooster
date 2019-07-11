@@ -12,7 +12,7 @@ var svgConfig = {
                 maxHeight: 400
             },
             spacing: { // Add padding
-                padding: 10
+                padding: 0
             },
         },
         mode: {
