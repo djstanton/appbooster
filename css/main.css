@@ -2374,8 +2374,7 @@ body {
   -webkit-justify-content: center;
   -ms-flex-pack: center;
   justify-content: center;
-  padding: 73px 0 0;
-  margin-bottom: 80px; }
+  padding: 73px 0 80px; }
 
 .ab__dashboard-after-col {
   text-align: right;
