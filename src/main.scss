@@ -874,7 +874,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 73px 0 80px;
+    padding: 73px 0 0;
+
+    @include respond-to(mid) {
+      padding-bottom: 80px;
+    }
+
+    @include respond-to(medi) {
+      padding-bottom: 80px;
+    }
   }
 
   &__dashboard-after-col {
