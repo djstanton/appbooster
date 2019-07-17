@@ -3,95 +3,103 @@ var isMobile = window.innerWidth < 721;
 var parts = null;
 
 document.addEventListener("DOMContentLoaded", function(event) {
-    var slider = tns({
-        container: '.js-top-slider',
-        items: 1,
-        slideBy: 'page',
-        autoplay: true,
-        controls: false,
-        mouseDrag: true,
-        speed: 800
-    });
+    var sliderContainer = document.querySelector('.js-top-slider');
 
-    Highcharts.chart('container', {
-        title: {
-            text: ''
-        },
-        yAxis: {
-            max: 7,
-            visible: false,
-            labels: {
+    if(sliderContainer) {
+        var slider = tns({
+            container: '.js-top-slider',
+            items: 1,
+            slideBy: 'page',
+            autoplay: true,
+            controls: false,
+            mouseDrag: true,
+            speed: 800
+        });
+    }
+
+    var chartContainer = document.querySelector('#container');
+
+    if(chartContainer) {
+        Highcharts.chart('container', {
+            title: {
+                text: ''
+            },
+            yAxis: {
+                max: 7,
+                visible: false,
+                labels: {
+                    enabled: false
+                },
+            },
+            credits: {
                 enabled: false
             },
-        },
-        credits: {
-            enabled: false
-        },
-        xAxis: {
-            visible: false,
-            labels: {
+            xAxis: {
+                visible: false,
+                labels: {
+                    enabled: false
+                },
+            },
+
+            legend: {
                 enabled: false
             },
-        },
+            exporting: {
+                enabled: false,
+            },
+            series: [{
+                title: 'Рейтинг',
+                data: [2, 2.7, 2.7, 3.7, 4.1, 4.7],
+                tooltip: {
+                    headerFormat: '',
+                    pointFormat: '<div class="svg-icon svg-star-orange svg-star-orange-dims">  <b>{point.y}</b><br/>'
+                }
+            }],
+            chart: {
+                backgroundColor: 'transparent'
+            },
+            plotOptions: {
 
-        legend: {
-            enabled: false
-        },
-        exporting: {
-            enabled: false,
-        },
-        series: [{
-            title: 'Рейтинг',
-            data: [2, 2.7, 2.7, 3.7, 4.1, 4.7],
-            tooltip: {
-                headerFormat: '',
-                pointFormat: '<div class="svg-icon svg-star-orange svg-star-orange-dims">  <b>{point.y}</b><br/>'
-            }
-        }],
-        chart: {
-            backgroundColor: 'transparent'
-        },
-        plotOptions: {
+                line: {
+                    marker: {
+                        enabled: false,
+                        states: {
+                            hover: {
+                                enabled: true,
+                                fillColor: '#ffffff'
+                            }
+                        }
+                    },
+                    color: '#f5a623',
+                    label: {
+                        enabled: false
+                    }
+                },
+                series: {
+                    shadow: true
+                },
+                bullet: {
+                    visible: false
+                }
+            },
 
-            line: {
-                marker: {
-                    enabled: false,
-                    states: {
-                        hover: {
-                            enabled: true,
-                            fillColor: '#ffffff'
+            responsive: {
+                rules: [{
+                    condition: {
+                        maxWidth: 500
+                    },
+                    chartOptions: {
+                        legend: {
+                            layout: 'horizontal',
+                            align: 'center',
+                            verticalAlign: 'bottom'
                         }
                     }
-                },
-                color: '#f5a623',
-                label: {
-                    enabled: false
-                }
-            },
-            series: {
-                shadow: true
-            },
-            bullet: {
-                visible: false
+                }]
             }
-        },
 
-        responsive: {
-            rules: [{
-                condition: {
-                    maxWidth: 500
-                },
-                chartOptions: {
-                    legend: {
-                        layout: 'horizontal',
-                        align: 'center',
-                        verticalAlign: 'bottom'
-                    }
-                }
-            }]
-        }
-
-    });
+        });
+    }
 
     generateNav();
 
@@ -103,7 +111,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     var topCut = document.querySelector('.js-cut-top');
     var topCut2 = document.querySelector('.js-cut');
     var actionBtn = document.querySelectorAll('.js-action');
-    var registrationPopup = document.querySelector('.js-registration-popup');
     var ppCloseBtn = document.querySelector('.js-close-pp');
     var ppAcceptBtn = document.querySelector('.js-accept-pp');
     var ppWrap = document.querySelector('.js-pp-wrap');
@@ -117,43 +124,58 @@ document.addEventListener("DOMContentLoaded", function(event) {
 
     links[0].classList.add('active');
 
-    for (var i = 0; i < menuBtns.length; i++) {
-        menuBtns[i].addEventListener("click", toggleMenu);
+    if(menuBtns.length) {
+        for (var i = 0; i < menuBtns.length; i++) {
+            menuBtns[i].addEventListener("click", toggleMenu);
+        }
     }
 
-    for (var i = 0; i < actionBtn.length; i++) {
-        actionBtn[i].addEventListener("click", toggleRegistrationPopup);
+    if(actionBtn.length) {
+        for (var i = 0; i < actionBtn.length; i++) {
+            actionBtn[i].addEventListener("click", toggleRegistrationPopup);
+        }
     }
 
-    topCutBtn.addEventListener("click", function () {
-        topCut.classList.add('shown');
-        topCutBtn.classList.add('hidden');
-    });
 
-    ppCloseBtn.addEventListener("click", function () {
-        ppWrap.classList.remove('shown');
-    });
+    if(topCutBtn) {
+        topCutBtn.addEventListener("click", function () {
+            topCut.classList.add('shown');
+            topCutBtn.classList.add('hidden');
+        });
 
-    ppAcceptBtn.addEventListener("click", function () {
-        ppWrap.classList.remove('shown');
-        sessionStorage.setItem('ppAccepted', true);
-    });
+    }
 
-    topCutBtn2.addEventListener("click", function () {
-        topCut2.classList.add('shown');
-        topCutBtn2.classList.add('hidden');
-    });
+    if(ppCloseBtn) {
+        ppCloseBtn.addEventListener("click", function () {
+            ppWrap.classList.remove('shown');
+        });
+    }
 
-    actionBtn.addEventListener("click", function () {
-        registrationPopup.classList.add('shown');
-    });
+    if(ppAcceptBtn) {
+        ppAcceptBtn.addEventListener("click", function () {
+            ppWrap.classList.remove('shown');
+            sessionStorage.setItem('ppAccepted', true);
+        });
+    }
+
+    if(topCutBtn2) {
+        topCutBtn2.addEventListener("click", function () {
+            topCut2.classList.add('shown');
+            topCutBtn2.classList.add('hidden');
+        });
+    }
 
     document.addEventListener("scroll", function() {
         clearTimeout(timeout);
         timeout = setTimeout(function() {
+            if(!links.length) {
+                return;
+            }
+
             links.forEach(function (value) {
                 value.classList.remove('active');
             });
+
 
             var height = 0;
 
@@ -226,10 +248,13 @@ document.addEventListener("DOMContentLoaded", function(event) {
     });
     
     vidElem = document.getElementsByTagName('video')[0];
-    vidElem.addEventListener("ended", function () {
+
+    if(vidElem) {
+        vidElem.addEventListener("ended", function () {
             vidElem.currentTime = 2.11;
             vidElem.play();
-    }, false);
+        }, false);
+    }
 });
 
 function checkThingItem() {
