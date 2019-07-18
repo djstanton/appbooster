@@ -17,6 +17,9 @@ $small: 960px;
 $large: 1240px;
 $mid: 1320px;
 
+a:visited {
+  color: $basecolor;
+}
 
 @mixin respond-to($media) {
   @if $media == handhelds {
@@ -24,7 +27,7 @@ $mid: 1320px;
   }
 
   @if $media == mid {
-    @media only screen and (min-width: $small) and (max-width: $mid - 1) { @content; }
+    @media only screen and (min-width: $small + 1) and (max-width: $mid - 1) { @content; }
   }
 
   @else if $media == medium-screens {
@@ -772,6 +775,8 @@ body {
     background: #fff;
     padding-bottom: 0;
 
+    display: none; //temp hidden
+
     .ab__hiw-title {
       text-align: center;
     }
@@ -1025,6 +1030,7 @@ body {
     left: 51px;
     top: 130px;
     display: flex;
+    user-select: none;
 
     @include respond-to(handhelds) {
       position: relative;
@@ -2602,6 +2608,35 @@ body {
     }
 
     &:hover {
+      .ab {
+        &__target-planet {
+          &--1-1 {
+            animation: rotate360 140s linear infinite;
+
+            &:before, &:after {
+              transform: translate(0,0);
+            }
+          }
+          &--2-1 {
+            animation: rotate360m 120s linear infinite;
+
+            &:before, &:after {
+              transform: translate(0,0);
+            }
+          }
+
+          &--3-1 {
+            animation: rotate360 110s linear infinite;
+
+            &:before, &:after {
+              transform: translate(0,0);
+            }
+          }
+        }
+      }
+    }
+
+    @include respond-to(handhelds) {
       .ab {
         &__target-planet {
           &--1-1 {
